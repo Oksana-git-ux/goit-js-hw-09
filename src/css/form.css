@@ -1,0 +1,94 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  height: 296px;
+  padding: 24px;
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  gap: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  outline: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-form textarea {
+  height: 96px;
+  resize: none;
+}
+
+.feedback-form label:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border-color: #000000;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #000000;
+}
+
+.feedback-form input::placeholder {
+  color: transparent;
+}
+
+.feedback-form input:focus::placeholder {
+  color: #808080;
+}
+
+.feedback-form input[name='email']:focus::placeholder {
+  content: 'Type area';
+}
+
+.feedback-form button {
+  display: block;
+  width: 95px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
+  border-color: #6c8cff;
+}
